@@ -8,7 +8,7 @@ adenocarcinoma (COAD).
 ```
 Xu_KCNA5_Mutations/
 ├── dNdS/                 # dN/dS positive selection analysis (R, Python)
-├── Clustering/             # Spatial mutation clustering and lollipop plot (R, Python)
+├── clustering/             # Spatial mutation clustering and lollipop plot (R, Python)
 ├── binding_ddg/            # Binding ΔΔG calculations using FoldX (Python)
 ├── md/                     # Molecular dynamics simulation and analysis (GROMACS, Python)
 └── pathway_analysis/       # PROGENY, DESeq2, and GSEA on TCGA-COAD (R)
@@ -41,7 +41,7 @@ KCNA5 mutations cluster near the selectivity filter beyond random expectation.
 Tools: R (`dndscv`), Python (`scipy`, `matplotlib`)  
 Data: COSMIC Genome Screens Mutant (large intestine, adenocarcinoma)
 
-### 2. Mutation clustering (`Clustering/`)
+### 2. Mutation clustering (`clustering/`)
 
 Identifies statistically significant spatial clusters of KCNA5 missense mutations
 along the protein sequence using `iPAC`, and visualises them as an annotated
