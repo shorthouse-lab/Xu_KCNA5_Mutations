@@ -130,7 +130,7 @@ source("scripts/deseq2_mutations.R")
   `data/cleaned/tumour_samples.rds`, `data/raw/KCNA5_mutations.txt`
 - Runs two contrasts within tumour samples only:
   - All KCNA5 mutants vs. WT
-  - T1 domain mutants (residues 128–216) vs. WT
+  - T1 domain mutants (residues 120–216) vs. WT
 - Output: `results/deseq2/DESeq2_KCNA5_T1Mutant_vs_WT.csv`,
   `results/deseq2/DESeq2_KCNA5_nonT1Mutant_vs_WT.csv`,
   `results/deseq2/dds_T1mutant_vs_WT.rds`,
