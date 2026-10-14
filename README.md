@@ -67,7 +67,6 @@ Data: SWISS-MODEL structure (UniProt P22460, residues 120–527, template 9eef.1
 3 replicates each). Analysis focuses on inter-subunit distances at the buried polar
 interface formed by D166 and its hydrogen-bonding partners.
 
-Scripts adapted from: https://github.com/shorthouse-lab/Xu_KCNA5_Mutations/tree/main/md  
 Tools: GROMACS, Python (`MDAnalysis`, `simple_mda`)
 
 ### 5. Pathway analysis (`pathway_analysis/`)
@@ -102,3 +101,4 @@ Raw data files are not included in this repository:
   provided to reproduce simulations from the equilibrated structure
 
 ## Citation
+https://www.biorxiv.org/content/10.64898/2026.10.09.758060v1
