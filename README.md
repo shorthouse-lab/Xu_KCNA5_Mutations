@@ -2,6 +2,7 @@
 
 Computational analysis of cancer-associated mutations in KCNA5 (Kv1.5) in colorectal
 adenocarcinoma (COAD).
+Link to the study: https://www.biorxiv.org/content/10.64898/2026.10.09.758060v1
 
 ## Repository structure
 
