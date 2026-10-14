@@ -60,7 +60,7 @@ cat("WT tumour samples:", length(wt_in_counts), "\n")
 saveRDS(wt_in_counts, "data/cleaned/wt_tumour_samples.rds")
 
 # -----------------------------------------------------------------------------
-# Identify T1 domain mutations (residues 128-216)
+# Identify T1 domain mutations (residues 120-216)
 # Restricted to structurally resolved region
 # Residues 1-127 absent from crystal structure — excluded
 # -----------------------------------------------------------------------------
@@ -76,10 +76,10 @@ t1_mutations <- data.frame(
     )
 
 t1_samples        <- t1_mutations %>%
-    filter(residue >= 128 & residue <= 216)
+    filter(residue >= 120 & residue <= 216)
 t1_mutant_samples <- t1_samples$sample
 
-cat("\nT1 domain mutant samples (residues 128-216):\n")
+cat("\nT1 domain mutant samples (residues 120-216):\n")
 print(t1_samples)
 cat("Number of T1 domain mutant samples:", nrow(t1_samples), "\n")
 
@@ -189,10 +189,10 @@ run_deseq2 <- function(counts_raw,
 
 
 # -----------------------------------------------------------------------------
-# Identify non-T1 domain mutations (residues > 216)
+# Identify non-T1 domain mutations (residues 120-216)
 # -----------------------------------------------------------------------------
 non_t1_samples <- t1_mutations %>%
-    filter(residue < 128 | residue > 216)
+    filter(residue < 120 | residue > 216)
 
 non_t1_mutant_samples <- non_t1_samples$sample
 
